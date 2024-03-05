@@ -1,0 +1,107 @@
+<?php
+	session_start();
+	if(isset($_SESSION["id"])){
+	//location after login
+	print"<script>window.location.href='web.php';</script>";	
+	die();	
+	}?>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NAVBAR</title>
+<style>
+	*{
+		margin:0;
+		padding: 0;
+		font-family: Century Gothic;
+	}
+	header{
+		background-image: url(BG.png);
+		height: 100%;
+		background-size: cover;
+	}
+	ul{
+		float: right;
+		list-style: none;
+		margin-top: 25px;
+
+	}
+	ul li{
+		display: inline-block;
+
+	}
+	ul li a{
+		text-decoration: none;
+		color: #fff952;
+		padding: 5px 20px;
+		border: 1px solid transparent;
+		transition: 0.6s ease;
+	}
+	ul li a:hover{
+		background-color: #fff952;
+		color: #0f7a8a;
+	}
+	ul li.active a{
+		background-color: #fff952;
+		color: #0f7a8a;
+	}
+	.logo img{
+		float: left;
+		width: 100px;
+		height: auto;
+		color: white;
+	}
+	.main{
+		max-width: 1200px;
+		margin:auto;
+	}
+	 .footer {
+	font-family: Century Gothic;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 60px;
+   background-color: #0f7a8a;
+}
+.text{
+	color: #fff952;
+	text-align: center;
+	position: relative;
+	bottom: -15;
+}
+
+	
+
+</style>
+</head>
+	<Body>
+		<header>
+			<div class="main">
+				<div class="logo">
+					<img src="LOGO3.png">
+				<ul>
+					<li class="active"><a href="1stwebsite.html">HOME</a></li>
+					<li><a href="About1.html">ABOUT ME</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="logout.php">LOGOUT</a></li>
+				</ul>
+			</div>
+			<div class="title">
+			<h1></h1>
+		</div>
+		</header>
+
+		<br>
+		<div class="footer">
+  		<p class="text">Powered By GGP Template<br>
+  		Copyright © 2019 GGP18 Templates
+  		</p>
+		</div>
+
+	
+ 
+	</body>
+	</html>

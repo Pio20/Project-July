@@ -1,0 +1,204 @@
+<?php
+	session_start();
+	if(isset($_SESSION["id"])){
+	//location after login
+	print"<script>window.location.href='web.php';</script>";	
+	die();	
+	}?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>About Page</title>
+</head>
+<style>
+	body{
+		margin:0px;
+		font-family: tahoma;
+		background-color: #0f7a8a;
+	}
+	.color-black{
+		background:#fff952;
+		width: 60%;
+		padding: 7% 20% 10% 20%;
+		color: #0f7a8a;
+	}
+	.white-block{
+		background: #0f7a8a;
+		width: 60%;
+		padding: 7% 20% 10% 20%;
+		color: #fff952;
+	}
+	h1{
+		text-align: center;
+		font-size: 80px;
+		font-family: tahoma;
+		font-weight: bold;
+	}
+	p{
+		text-align: center;
+		font-size: 20px;
+		font-family: tahoma;
+	}
+	.scallop-down{
+		height: 100px;
+		width:100%;
+		background: -webkit-gradient(radial, 50% 0,10, 50% 0, 40, from(#fff952), color-stop(0.49, #fff952), color-stop(0.51, #0f7a8a), to(#0f7a8a));
+		-webkit-background-size:49px 100%;
+	}
+	.scallop-up{
+		height: 130px;
+		width: 100%;
+		background: -webkit-gradient(radial, 50% 100%,10, 50% 100%, 40, from(#fff952), color-stop(0.49, #fff952), color-stop(0.51, #0f7a8a), to(#0f7a8a));
+		-webkit-background-size:49px 100%;
+		#fff952
+		#0f7a8a
+		
+	}
+	*{
+		margin:0;
+		padding: 0;
+		font-family: Century Gothic;
+	}
+	header{
+		background-color: #0f7a8a;
+		height: 80px;
+	}
+	ul{
+		float: right;
+		list-style: none;
+		margin-top: 25px;
+
+	}
+	ul li{
+		display: inline-block;
+
+	}
+	ul li a{
+		text-decoration: none;
+		color: #fff952;
+		padding: 5px 20px;
+		border: 1px solid transparent;
+		transition: 0.6s ease;
+	}
+	ul li a:hover{
+		background-color: #fff952;
+		color: #0f7a8a;
+	}
+	ul li.active a{
+		background-color: #fff952;
+		color: #0f7a8a;
+	}
+	.logo img{
+		float: left;
+		width: 100px;
+		height: auto;
+		color: white;
+	}
+	
+</style>
+	<Body>
+		<header>
+			<div class="main">
+				<div class="logo">
+					<img src="LOGO3.png">
+				<ul>
+					<li><a href="1stwebsite.html">HOME</a></li>
+					<li class="active"><a href="About1.html">ABOUT ME</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="blogpost.html">BLOG POST</a></li>
+				</ul>
+			</div>
+			<div class="title">
+			<h1></h1>
+		</div>
+		</header>
+	<br>
+	<br><br><br>
+	<div class="scallop-up"></div>
+	<div class="color-black">
+		<h1>ABOUT US<br>DEVELOPER</h1>
+		<br>
+		<p>
+			 Hi! Im Piolo C. Aranza im a student in STI San Pabo College. I develop this website to improve my skills in html and css. This a webiste where you can see diffrent quotes abput life or events. You can also see Best pictires wth  high quality resolution. I created this website to help other people who have  problems or struggles in life. " I wanted to say Youre not alone and you can keep going"
+			 <br><br>
+			 “We love what we do and we do what our clients love & work with great clients all over the world to create thoughtful and purposeful websites.” 
+			 <br>
+			 <br>
+		</p>
+	</div>
+
+	<div class="scallop-down"></div>
+	<div class="white-block">
+		<h1>Favorite Poem</h1>
+		<br>
+		<p>
+			Paint Your Life
+
+Life is like a piece of art,
+It requires lots of heart.
+Choose your paint and your brush,
+Take your time, avoid the rush.
+
+Before you paint, choose your theme,
+Don't be afraid, to follow your dream.
+It's alright, to make a mistake.
+Your painting is real, it's not fake.
+
+Look at your painting, don't be crying,
+Begin again, keep on trying.
+Your painting is never fully complete,
+Enjoy the process, make sure it's sweet.
+<br>
+<br>
+By tree.cards
+<br>
+<br>
+Sometimes in life we make good choices, and sometimes not as good.
+
+I think that it's ok to make mistakes. We learn from them. But also, mistakes are a part of life that makes us real genuine human beings.
+
+The last two lines of the previous poem are meant to remind us that we never stop learning in life. No matter how old we get, there is no such thing as infinite wisdom.
+
+There are always new things we could learn about ourselves, the world, and about how we interact with others. Personally, I'm constantly working on improving my social or people skills.
+		</p>
+	</div>
+
+	<div class="scallop-up"></div>
+	<div class="color-black">
+		<h1>Theres still light in the dark</h1>
+		<br>
+		<p>
+			Tears, tears go away.
+Why must you come back almost every day?
+You remind me of my pain.
+You remind me of my past.
+Why can't you go away?
+Just let this happiness last.
+
+Tears, tears flowing so fast,
+You're telling the story of a child in the past.
+She's stuck with the memory of what has just happened,
+Praying to God one day she won't be broken.
+
+The bruises, the scars,
+The ones that will never heal.
+She grew up thinking that's how you need to feel.
+
+This little girl,
+Not sure about life,
+Cut after cut 
+Then took her life.
+
+Tears, tears come as she leaves this world
+"So young, so happy" for all they know.
+Beaten as a child,
+Not loved all her life,
+Backstabbing friends.
+
+Oh wait that's my life....
+		</p>
+	</div>
+</body>
+</html>
